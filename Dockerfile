@@ -7,7 +7,7 @@ MAINTAINER Jerry <jerry@xqopen.com>
 
 ENV ANDROID_SDK_VERSION 24.4.1
 ENV ANDROID_API_LEVELS android-16,android-17,android-18,android-19,android-20,android-21,android-22,android-23,android-24
-ENV ANDROID_BUILD_TOOLS build-tools-23.0.2,build-tools-24.0.3
+ENV ANDROID_BUILD_TOOLS build-tools-23.0.2,build-tools-24.0.3,build-tools-25.0.0
 ENV ANDROID_EXTRA addon-google_apis-google-23,extra-android-m2repository,extra-google-google_play_services,extra-google-m2repository,extra-google-market_apk_expansion,extra-google-market_licensing
 
 RUN update-ca-certificates -f
