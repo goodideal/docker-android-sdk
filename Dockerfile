@@ -5,7 +5,7 @@ MAINTAINER Jerry <jerry@xqopen.com>
 # 国内源
 # ADD sources.list /etc/apt/sources.list
 
-ENV ANDROID_SDK_VERSION 26.0.2
+ENV ANDROID_SDK_VERSION 24.4.1
 ENV ANDROID_API_LEVELS android-16,android-17,android-18,android-19,android-20,android-21,android-22,android-23,android-24,android-25,android-26
 ENV ANDROID_BUILD_TOOLS build-tools-23.0.3,build-tools-24.0.3,build-tools-25.0.3,build-tools-26.0.1
 ENV ANDROID_EXTRA addon-google_apis-google-23,extra-android-m2repository,extra-google-google_play_services,extra-google-m2repository,extra-google-market_apk_expansion,extra-google-market_licensing
@@ -22,7 +22,7 @@ COPY bin/ /usr/local/bin/
 
 RUN chmod 755 /usr/local/bin/docker-android-sdk-*
 
-RUN wget -q http://dl.google.com/android/android-sdk_r${ANDROID_SDK_VERSION}-linux.tgz && \
+RUN wget -q https://dl.google.com/android/android-sdk_r${ANDROID_SDK_VERSION}-linux.tgz && \
     tar zxvf android-sdk_r${ANDROID_SDK_VERSION}-linux.tgz && \
     mv android-sdk-linux /usr/local/bin/android-sdk && \
     rm android-sdk_r${ANDROID_SDK_VERSION}-linux.tgz
